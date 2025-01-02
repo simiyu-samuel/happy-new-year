@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy New Year 2025</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8V0s4i04d3gzj6Mkkc4L/t9m40P0F9E3xD5K"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/f8fb36d9f1.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Arial", sans-serif;
+        background: linear-gradient(135deg, #ff7eb3, #ff758c);
+        overflow-x: hidden;
+        color: #fff;
+      }
+
+      header {
+        text-align: center;
+        padding: 10px;
+        background: #e0054e;
+        color: #ffffff;
+        font-size: 2.5em;
+        position: relative;
+        overflow: hidden;
+      }
+
+      header::after {
+        content: "";
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(
+          circle,
+          rgba(255, 255, 255, 0.5) 20%,
+          transparent 70%
+        );
+        animation: fireworks 5s linear infinite;
+      }
+
+      @keyframes fireworks {
+        0% {
+          transform: translate(-50%, -50%) scale(0);
+        }
+        100% {
+          transform: translate(-50%, -50%) scale(1);
+        }
+      }
+
+      section {
+        padding: 2px;
+        text-align: center;
+        animation: fadeIn 2s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .countdown {
+        font-size: 3em;
+        margin: 10px 0;
+        color: #ffffff;
+        font-weight: bold;
+      }
+
+      .family-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .family-card {
+        background: #ff85a2;
+        color: #fff;
+        padding: 15px;
+        border-radius: 10px;
+        width: 200px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s;
+      }
+
+      .family-card:hover {
+        transform: scale(1.1);
+      }
+
+      .family-card img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 10px;
+      }
+
+      .guestbook {
+        margin: 20px auto;
+        max-width: 500px;
+        background: #ff3d68;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .guestbook textarea {
+        width: 100%;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      .guestbook button {
+        padding: 10px 20px;
+        border: none;
+        background: #ffffff;
+        color: #ff3d68;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+
+      footer {
+        background: #222;
+        padding: 10px;
+        text-align: center;
+        font-size: small;
+      }
+    </style>
+  </head>
+  <body>
+    <header>🎆 Samuel Simiyu Wishes you, Happy New Year 2025 🎆</header>
+
+    <section>
+      <p>
+        Wishing you joy, health, and success in the New Year!<br />
+        Thank you for being an amazing part of my life.
+      </p>
+    </section>
+
+    <section>
+      <div class="countdown" id="countdown">Loading countdown...</div>
+    </section>
+
+    <section class="family-gallery">
+      <div class="family-card">
+        <img src="moma.jpg" alt="Family Member 1" />
+        <h3>Momma &#x2764;</h3>
+        <p>May 2025 bring you endless joy and love!&#x1F389;&#x2728;</p>
+      </div>
+      <div class="family-card">
+        <img src="dad.jpg" alt="Family Member 2" />
+        <h3>&#x2764;Dad</h3>
+        <p>Wishing you a year full of happiness and success!&#x1F389;</p>
+      </div>
+      <div class="family-card">
+        <img src="siz.jpg" alt="Family Member 3" />
+        <h3>Bloody &#x2764;Siz</h3>
+        <p>Here's to an incredible year ahead!&#x1F389;</p>
+      </div>
+      <div class="family-card">
+        <img src="rel.jpg" alt="Family Member 3" />
+        <h3>Relatives &#x2764;</h3>
+        <p>May God grant all your wishes!&#x2728;</p>
+      </div>
+    </section>
+
+    <section>
+      <a
+        href="https://www.github.com/simiyu-samuel"
+        target="_blank"
+        class="text-light mx-2"
+        ><i class="fab fa-github fa-2x"></i> Github</a
+      >
+      <a
+        href="https://www.linkedin.com/in/samuel-simiyu-63270a236"
+        target="_blank"
+        class="text-light mx-2"
+        ><i class="fab fa-linkedin fa-2x"></i> LinkedIn</a
+      >
+      <a href="mailto:simiyusamuel869@gmail.com" class="text-light mx-2"
+        ><i class="fas fa-envelope fa-2x"></i> Mail</a
+      >
+    </section>
+
+    <footer>Cheers to an amazing 2025! Connect with me on Social Media.</footer>
+
+    <script>
+      const countdownElement = document.getElementById("countdown");
+      const targetDate = new Date("January 1, 2025 00:00:00").getTime();
+
+      function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = targetDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        countdownElement.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+        if (distance < 0) {
+          countdownElement.textContent = "Happy New Year! 🎉";
+        }
+      }
+
+      setInterval(updateCountdown, 1000);
+    </script>
+  </body>
+</html>
